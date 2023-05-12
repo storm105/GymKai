@@ -1,0 +1,13 @@
+{{!-- This is a Partial --}}
+<div class="Card">
+    <div class="CardSplit">
+        <p> Class: {{this.classname}}</p>
+        <p> Length: {{this.length}} minutes</p>
+    </div>
+
+    <div class="CardSplit">
+        <form action="/remove/{{this.classid}}" method="POST">
+            <input type="submit" value="Remove Class" class="buttonPink">
+        </form>
+    </div>
+</div>

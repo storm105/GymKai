@@ -1,0 +1,17 @@
+<main id="IndexPage">
+
+    <p class="center">Some of our classes this week:</p>
+
+    <div class="indexImage">
+        {{#each displayArray}}
+        {{>random_items this}}
+        {{/each}}
+    </div>
+
+    <div class="center">
+        <p>
+            <a href="/classSch" class="buttonBlueBorder">See All Classes</a>
+        </p>
+    </div>
+
+</main>

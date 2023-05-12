@@ -1,0 +1,24 @@
+<h1>Shopping Cart - Your Classes</h1>
+
+<div class="">
+    {{!-- Loop all classes in the array --}}
+    {{#each cart}}
+        {{>cart_items this}}
+    {{/each}}
+
+    <hr />
+    <div class="Card">
+        <div class="CardSplit">
+            <p>Subtotal: $ {{subtotal}} </p>
+            <p>Tax: $ {{tax}}</p>
+            <p>Total: $ {{total}}</p>
+        </div>
+
+        <div class="CardSplit" style="margin-top: auto">
+            <form action="/pay" method="POST">
+                <input name="totalAmt" type="hidden" value={{total}}>
+                <input type="submit" value="Pay" class="buttonBlueBorder">
+            </form>
+        </div>
+    </div>
+</div>

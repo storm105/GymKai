@@ -1,0 +1,195 @@
+/*
+Name: Kai Yu Man
+StudentID: 162280218
+SenecaEmail: kman2@myseneca.ca
+Date: 5 April 2023
+Description: Assignment 5
+Course: WEB322
+Professor: Ms. Jenelle Chen
+*/
+
+a {
+    /* self note: a = hyperlink text */
+    text-decoration: none;
+    /* WITHOUT underline */
+    border: #FCCD04;
+    border-width: 1px;
+    color: rgb(0, 0, 0);
+}
+
+a:hover {
+    color: rgb(0, 121, 251);
+}
+
+ /* self note: with . is for "class" in html */
+.center {   
+    text-align: center;
+}
+
+.right {
+    justify-content: right;
+}
+
+/* self note:  without . is for element in html */
+nav {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+
+    padding: 15px;
+}
+
+/* Button Style #1 */
+.buttonBlue {
+    color: rgb(0, 111, 255);;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 15px;    
+}
+
+.buttonBlue:hover {
+    color: white;
+    background-color: rgb(0, 110, 227);
+    padding: 5px 15px;
+}
+
+/* Button Style #2 */
+.buttonBlueBorder {
+    border: 2px solid rgb(0, 121, 251);
+    color: rgb(0, 111, 255);;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+.buttonBlueBorder:hover {
+    border: 2px solid rgb(0, 121, 251);
+    color: white;
+    background-color: rgb(0, 121, 251);
+    padding: 5px 15px;
+}
+
+/* Button Style #3 */
+.buttonPinkBorder {
+    border: 2px solid rgb(247, 0, 251);
+    color: red;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 15px;
+}
+
+.buttonPinkBorder:hover {
+    border: 2px solid rgb(247, 0, 251);
+    color: white;
+    background-color: rgb(247, 0, 251);
+    padding: 5px 15px;
+}
+
+/* Button Style #4 */
+.buttonPink {
+    border: 0px;
+    color: rgb(247, 0, 251);
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 15px;    
+}
+
+.buttonPink:hover {
+    color: white;
+    background-color: rgb(247, 0, 251);
+    padding: 5px 15px;
+}
+
+
+form {
+    border-radius: 0;
+}
+
+.loginForm {
+    max-width: 280px;
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    flex-direction: column;
+
+}
+
+.CardsContainer {
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(255, 236, 168);
+    padding-bottom: 10px;
+}
+
+.Card {
+    max-width: 800px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    /* background-color: rgb(255, 236, 168); */
+}
+
+.CardSplit {
+    width: 350px;
+    padding: 15px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.indexImage {
+    max-width: 700px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
+
+h1, h2 {
+    font-family: 'Exo 2', sans-serif;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 20px;
+}
+
+h1.backgroundBlue, h2.backgroundPink {
+    color: white;
+}
+
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(24, 68, 18);
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+.backgroundBlue {
+    background-color: rgb(0, 121, 251);
+}
+
+.backgroundPink {
+    background-color: rgb(247, 0, 251);
+    margin: 20px 0px;
+}
+
+.bottomBox {
+    padding: 5px 35px;
+}
+
+.bottomBox > p {
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+}

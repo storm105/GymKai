@@ -1,0 +1,62 @@
+<!-- 
+Name: Kai Yu Man
+StudentID: 162280218
+SenecaEmail: kman2@myseneca.ca
+Date: 5 April 2023
+Description: Assignment 5
+Course: WEB322
+Professor: Ms. Jenelle Chen 
+-->
+
+{{!-- This is the Layout template of hbs --}}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Gym of Kai</title>
+    <!-- Self CSS stylesheet -->
+    <link rel="stylesheet" href="/mystyle5.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="/" class="buttonBlue">Home</a>
+            <a href="/classSch" class="buttonBlue">Class Schedule</a>
+            <a href="/userCart" class="buttonBlue">Shopping Cart</a>
+
+            {{#if currentSession.hasLoggedInUser  }}
+                <a href="/logout" class="buttonPinkBorder">Logout</a>
+            {{else}}
+                <a href="/auth" class="buttonPinkBorder">Login / Signup</a>
+            {{/if}}
+        </nav>
+
+        {{#if currentSession.hasLoggedInUser }}
+            <div style="max-width: 720px; margin-left: auto; margin-right: auto;"  >
+                <p style="text-align: right;">Hello {{{currentSession.username}}}! </p>
+            </div>
+        {{/if}}
+    </header>
+
+    <h1 class="backgroundBlue">Kai's Gym and Fitness</h1>
+    <h2 class="backgroundPink">Get Ready for the Hot Summer!</h2>
+
+    {{{ body }}}
+    
+</body>
+
+<div class="bottomBox backgroundBlue">
+    <p> Thank you for visiting Kai's Gym and Fitness. </p>
+    <p> 2023 by Kai. All Rights Reserved. For demostration only. </p>
+
+</div>
+
+</html>

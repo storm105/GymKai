@@ -1,0 +1,15 @@
+{{!-- This is a Partial --}}
+<div class="Card">
+    <div class="CardSplit">
+        <img src={{this.image}}  width=300px >
+    </div>
+    
+    <div class="CardSplit">
+        <h3> {{ this.classname }} </h3>
+        <p> {{ this.length }} minutes</p>
+
+        <form action="/bookNow/{{this.classid}}" method="POST">
+            <input type="submit" value="Book Now" class="buttonBlueBorder">
+        </form>
+    </div>
+</div>
